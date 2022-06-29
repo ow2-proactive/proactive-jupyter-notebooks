@@ -1,2 +1,4 @@
 .ipynb_checkpoints
 machine_learning_examples/logs
+machine_learning_examples/.local
+machine_learning_examples/models
