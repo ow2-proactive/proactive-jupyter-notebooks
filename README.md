@@ -34,17 +34,17 @@ To get a more detailed description of a needed pragma, the user can run the foll
 
 ### 2.1 Using connect()
 
-If you are trying ProActive for the first time, sign up on the [try platform](https://try.activeeon.com/signup.html).
+If you are trying ProActive for the first time, sign up on the [try platform](https://try.activeeon.com:8443/signup.html).
 Once you receive your login and password, connect to the trial platform using the `#%connect()` pragma:
 
 ```python
-#%connect(login=YOUR_LOGIN, password=YOUR_PASSWORD)
+#%connect(login=YOUR_LOGIN)
 ```
 
 To connect to another ProActive server host, use the later pragma this way:
 
 ```python
-#%connect(host=YOUR_HOST, [port=YOUR_PORT], login=YOUR_LOGIN, password=YOUR_PASSWORD)
+#%connect(host=YOUR_HOST, [port=YOUR_PORT], login=YOUR_LOGIN)
 ```
 
 Notice that the `port` parameter is optional. The default connexion port is `8080`.
@@ -52,7 +52,7 @@ Notice that the `port` parameter is optional. The default connexion port is `808
 You can also connect to a distant server by providing its `url` in the following way:
 
 ```python
-#%connect(url=YOUR_SERVER_URL, login=YOUR_LOGIN, password=YOUR_PASSWORD)
+#%connect(url=YOUR_SERVER_URL, login=YOUR_LOGIN)
 ```
 
 By providing the complete `url` of the server, users can eventually connect through the secure HTTPS protocol.
